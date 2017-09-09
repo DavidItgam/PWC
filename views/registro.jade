@@ -1,0 +1,45 @@
+extends ./layout.jade
+block contenido
+    div(class ="my-content")
+        div(class="container")
+            div(class ="row")
+                div(class = "col-sm-12")
+                    h1 
+                        strong Aseguradora ITGAM
+                    div(class = "mydescription")
+                        p Registro Login para aseguradora.
+            div(class = "row")
+                div(class = "col-sm-6 col-sm-offset-3 myform-cont")
+                    div(class = "myform-top")
+                        div(class = "myform-top-left")
+                            h3 Ingrese a nuestro sitio.
+                                p Digita todos tus datos correctamente
+                        div(class = "myform-top-right")
+                            i(class = "fa fa-key" )
+                    div(class="myform-bottom")
+                       form(action="/registro" , method ="POST")
+                            div(class="form-group")
+                                input(type="text" name="formFirtsname" placeholder="Nombres..." class="form-control" id="form-firtsname")
+                            div(class="form-group")
+                                input(type="text" name="formLastname" placeholder="Apellidos..." class="form-control" id="form-lastname")
+                            div(class="form-group")
+                                input(type="text" name="formEmail" placeholder="Email..." class="form-control" id="form-Email")
+                            div(class="form-group")
+                                input(type="password" name="formPassword" placeholder="Password..." class="form-control" id="form-Password")
+                            div(class="form-group")
+                                a(href="login")
+                                    input(type="submit" class="mybtn" value="Registrarme")
+            div(class = "row")                              
+                div(class="col-sm-12 mysocial-login")
+                    h3 Ingrese tambien por
+                        div(class="mysocial-login-buttons")
+                            a(class="mybtn-social" href="#")
+                                i(class="fa fa-facebook") Facebook
+                            a(class="mybtn-social" href="#")
+                                i(class="fa fa-twitter") Twitter
+                            a(class="mybtn-social" href="#")
+                                i(class="fa fa-google-plus") Google Plus
+                        div(class = "myform-bottom")
+
+                
+           

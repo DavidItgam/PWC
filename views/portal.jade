@@ -1,0 +1,38 @@
+extends ./layout.jade
+block contenido
+    div(class ="my-content")
+        div(class="container")
+            div(class ="row")
+                div(class = "col-sm-12")
+                    h1 
+                        strong Aseguradora ITGAM
+                    div(class = "mydescription")
+                        p Gestión de Control de Acceso.
+            div(class = "row")
+                div(class = "col-sm-6 col-sm-offset-3 myform-cont")
+                    div(class = "myform-top")
+                        div(class = "myform-top-left")
+                            h3 Ingreso a nuestro sitio.
+                                p Digita todos los datos correctamente
+                        div(class = "myform-top-right")
+                            i(class = "fa fa-car" )
+                    div(class="myform-bottom")
+                       form(action="/users" , method ="POST")
+                            div(class="form-group")
+                                input(type="text" name="form-placa" placeholder="PLACAS..." class="form-control" id="form-placa")
+                            div(class="form-group")
+                                input(type="submit" class="mybtn" value="Buscar Placas")
+            div(class = "row")                              
+                div(class="col-sm-12 mysocial-login")
+                    h3 Ingrese tambien por
+                        div(class="mysocial-login-buttons")
+                            a(class="mybtn-social" href="#")
+                                i(class="fa fa-facebook") Facebook
+                            a(class="mybtn-social" href="#")
+                                i(class="fa fa-twitter") Twitter
+                            a(class="mybtn-social" href="#")
+                                i(class="fa fa-google-plus") Google Plus
+                        div(class = "myform-bottom")
+
+                
+           
